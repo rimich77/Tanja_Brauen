@@ -1,0 +1,23 @@
+@mixin firstLetter {
+    display: inline-block;
+    line-height: 1;
+    background-image: linear-gradient(
+        to right,
+        $color-primary,
+        $color-primary-light
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 8rem;
+}
+
+@mixin gridLayout {
+    display: grid;
+    grid-template-columns:
+        [full-start] repeat(2, 1fr) [center-start] repeat(
+            9,
+            [col-start] 1fr [col-end]
+        )
+        [center-end] repeat(2, 1fr) [full-end];
+}

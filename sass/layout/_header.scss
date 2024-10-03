@@ -1,0 +1,78 @@
+.header {
+    position: relative;
+    height: 80vh;
+    background-image: linear-gradient(
+            to left top,
+            rgba($color-primary, 0.75),
+            rgba($color-primary-light, 0.75)
+        ),
+        url(../../img/spa-setting-with-lit-candle-fluffy-towels-fragrant-flowers-promotes-relaxation.jpg);
+
+    background-size: cover;
+
+    &__text-box {
+        position: absolute;
+        top: 40%;
+        left: 10%;
+    }
+}
+
+.nav {
+    transition: all 3s;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10rem;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 9rem;
+    width: 100%;
+
+    &__logo {
+        transition: all .2s;
+        width: 7rem;
+        height: 7rem;
+    }
+
+    &__links {
+        list-style: none;
+        display: flex;
+        align-items: center;
+    }
+
+    &__item {
+        margin-left: 10rem;
+    }
+
+    &__link:link,
+    &__link:visited {
+        transition: all .2s;
+        font-size: 2rem;
+        display: block;
+        text-decoration: none;
+        color: inherit;
+        font-family: inherit;
+        opacity: 0.6;
+        letter-spacing: 2px;
+        cursor: pointer;
+    }
+
+    &__link:hover {
+        opacity: 1;
+        transform: scale(1.1);
+
+    }
+}
+
+.sticky {
+    position: fixed;
+    background-image: linear-gradient(
+        to bottom,
+        rgba($color-secondary, 0.98),
+        rgba($color-light, 0.98)
+    );
+    z-index: 100;
+}
+
+

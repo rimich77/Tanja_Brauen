@@ -1,0 +1,33 @@
+//Variables
+$color-primary: #88ab8e;
+$color-primary-light: #afc8ad;
+
+$color-secondary: #eee7da;
+$color-light: #f2f1eb;
+
+$color-light-white: #fffafa;
+
+$color-white: #fff;
+$color-black: black;
+
+//Font
+$default-font-size: 2.1rem;
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%; //1rem = 10px
+}
+
+body {
+    box-sizing: border-box;
+    background-color: $color-light-white;
+    
+}
+
